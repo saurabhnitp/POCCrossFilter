@@ -1,0 +1,90 @@
+﻿<!--* ©2015 EdgeVerve Systems Limited, Bangalore, India. All Rights Reserved.
+The EdgeVerve proprietary software program ("Program"), is protected by copyrights laws, international treaties and other pending or existing intellectual property rights in India, the United States and other countries. The Program may contain / reference third party or open source components, the rights to which continue to remain with the applicable third party licensors or the open source community as the case may be and nothing here transfers the rights to the third party and open source components, except as expressly permitted. Any unauthorized reproduction, storage, transmission in any form or by any means (including without limitation to electronic, mechanical, printing, photocopying, recording or  otherwise), or any distribution of this Program, or any portion of it, may result in severe civil and criminal penalties, and will be prosecuted to the maximum extent possible under the law.-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1">
+    <title>Cross Filter</title>
+    <!--<link href="./fonts/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">-->
+    <link href="../fonts/Material-Design-Iconic-Fonts/css/material-design-iconic-font.min.css" rel="stylesheet" type="text/css">
+
+    <!--External Vendor Libraries -->
+    <!--<link rel="stylesheet" href="./angular/css/angular-material.min.css" />-->
+    <link href="../css/angular-material.min.css" rel="stylesheet" />
+    <link href="../css/xCharts.css" rel="stylesheet" />
+    <link href="../css/3rdParty/tipsy.css" rel="stylesheet" />
+
+
+    <!--Custom styles-->
+    <link rel="stylesheet" href="../css/pi-styles.css" />
+
+</head>
+<body>
+    <div class="pi-wrapper" ng-app='mainApp'>
+
+        <header>
+            <md-toolbar class="pi-header">
+                <a href="javascript:void(0);"><img class="pi-header-logo" src="../img/pi_logo.png" alt="logo" /></a>
+            </md-toolbar>
+        </header>
+
+        <div class="pi-view-container" ng-controller="crossFilterController">
+           <!--  <div class="pi-sub-header">
+                <span class="name">Cross Filter</span>
+                <div class="divider"></div>
+                <md-select class="selection" placeholder="Select" ng-model="selectedOption">
+                    <md-option class="options" ng-repeat="val in optionsList" value="{{val.option}}" ng-cloak>{{val.option}}</md-option>
+                </md-select>
+            </div> -->
+
+            <div class="charts-section" layout="row" layout-wrap layout-padding layout-margin>
+                <div id="chart1" flex="100"><div class="chart-name">Chart Name</div></div>
+                <div id="chart2" flex="45"><div class="chart-name">Chart Name</div></div>
+               
+                <div id="chart4" flex="25"><div class="chart-name">Chart Name</div></div>
+                <div id="chart5" flex="25"><div class="chart-name">Chart Name</div></div>
+                <div id="chart3" flex="40"><div class="chart-name">Chart Name</div></div>
+            </div>
+
+        </div>
+
+        <!-- <div class="pi-footer">
+            <div class="pi-footer-text pull-left">
+                <!--All Rights Reserved to EdgeVerve Systems Limited-->
+
+               <!--  <div class="pull-right">
+                    <a href="./HomePage"><img src="../img/EdgeInsights.png" /></a>
+                </div>
+                <div class="pi-footer-copyright">
+                    &copy; 2015 EdgeVerve Systems Limited
+                </div>
+            </div>
+        </div>  -->
+
+    </div>
+    <!--External Vendor Libraries -->
+    <!--<script src="./angular/js/angular.min.js"></script>-->
+    <script src="../js/angular.min.js"></script>
+    <!--<script src="./angular/js/angular-route.min.js"></script>-->
+    <script src="../js/angular-route.min.js"></script>
+    <!--<script src="./angular/js/angular-animate.min.js"></script>-->
+    <script src="../js/angular-animate.min.js"></script>
+    <!--<script src="./angular/js/angular-aria.min.js"></script>-->
+    <script src="../js/angular-aria.min.js"></script>
+    <!--<script src="./angular/js/angular-material.min.js"></script>-->
+    <script src="../js/angular-material.min.js"></script>
+    <script src="../js/d3.min.js"></script>
+    <script src="../js/jquery-2.1.3.min.js"></script>
+    <script src="../js/jquery.tipsy.js"></script>
+    <script src="../js/crossfilter.v1.min.js"></script>
+    <script src="../js/xCharts.js"></script>
+    <script src="../js/brush.js"></script>
+    <script src="../js/crossfilter.v1.min.js"></script>
+    <script src="../app.js"></script>
+    <script src="../services/crossfilterFactory.js"></script>
+    <script src="../controllers/crossFilterController.js"></script>
+</body>
+</html>
